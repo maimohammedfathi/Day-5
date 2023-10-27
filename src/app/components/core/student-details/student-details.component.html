@@ -1,0 +1,11 @@
+<div class="card m-2">
+    <div class="card-header">
+        {{student?.name}}
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{student?.faculty}}</li>
+        <li class="list-group-item">{{student?.Degree}}</li>
+    </ul>
+</div>
+
+<button class="btn btn-primary" [routerLink]="['/students']">Back to Students</button>

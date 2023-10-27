@@ -1,0 +1,28 @@
+<h1>{{studentId ? 'Edit Student':'Add Student'}}</h1>
+<form class="row g-3 m-5" (submit)="GetData($event)">
+    <div class="col-12">
+        <label for="name" class="form-label">Student name</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="student.name" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="col-12">
+        <label for="description" class="form-label">Student Faculty</label>
+        <input type="text" class="form-control" id="faculty" name="Faculty" [(ngModel)]="student.faculty"
+            required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="col-12">
+        <label for="price" class="form-label">Student Degree</label>
+        <input type="number" class="form-control" id="degree" name="degree" [(ngModel)]="student.Degree" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+</form>

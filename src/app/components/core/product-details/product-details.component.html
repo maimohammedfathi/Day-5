@@ -1,0 +1,12 @@
+<div class="card m-2">
+    <div class="card-header">
+        {{productId}} {{product?.name}}
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{product?.description}}</li>
+        <li class="list-group-item">{{product?.quantity}}</li>
+        <li class="list-group-item">{{product?.price}}</li>
+    </ul>
+</div>
+
+<button class="btn btn-primary" [routerLink]="['/products']">Back to products</button>
